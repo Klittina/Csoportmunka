@@ -20,6 +20,7 @@ article{
 footer{
     grid-area: f;
 }
+
 @media screen and(max-width: 600px)
               and(min-width: 300px){
     main{
