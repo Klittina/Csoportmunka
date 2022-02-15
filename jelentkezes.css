@@ -9,13 +9,27 @@ header{
     grid-area: h;
 }
 nav{
-    grid-area:n ;
+    grid-area:n;
 }
 aside{
-    grid-area: as;
+    grid-area:as;
 }
 article{
     grid-area: a;
+}
+footer{
+    grid-area: f;
+}
+@media screen and(max-width: 600px)
+              and(min-width: 300px){
+    main{
+        grid-template-areas: "h h h h"
+    "n n n n"
+    "a a a a"
+    "as as as as"
+    "f f f f";
+    grid-auto-columns: 1fr;
+    }
 }
 
 
