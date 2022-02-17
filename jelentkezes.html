@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jelentkezes.css">
     <title>Sárdi-Szedlár</title>
 </head>
+
 <body>
     <main>
         <header class="fejlec">
@@ -14,6 +17,7 @@
             </h1>
         </header>
         <article class="szemelyesarticle">
+            <h2>Űrlap</h2>
             <form action="/action_page.php">
                 <div class="form-row">
                     <label for="fname" class="adatok">Név:</label><br>
@@ -55,29 +59,53 @@
                     <label for="fname" class="adatok">Telefonszám:</label><br>
                     <input type="tel" id="kname" name="fname" value="+36" class="tartalom"><br>
                 </div>
-                <div class="form-row">
-                    <input type="checkbox" id="css" name="fav_language" value="CSS">
-                    <label for="css">CSS</label><br>
-                </div>
                 <div class="opciok">
                     <p>Gépjárművel érkezel?</p>
-                    <span class="wpcf7-form-control-wrap checkbox-829"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first"><input type="checkbox" name="checkbox-829[]" value="plusz mentőmellény"><span class="wpcf7-list-item-label">Nem</span></span>
-                    <span class="wpcf7-list-item"><input type="checkbox" name="checkbox-829[]" value="plusz hordó"><span class="wpcf7-list-item-label">Igen</span></span><span class="wpcf7-list-item last">
-                    </span>
-                    </span>
-                    </span>
+                    <input type="checkbox" id="auto1" name="vehicle1" value="Bike">
+                    <label for="auto1">Igen</label><br>
+                    <input type="checkbox" id="auto2" name="vehicle3" value="Boat">
+                    <label for="auto2">Nem</label><br><br>
                 </div>
-
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label><br><br>
-                <input type="submit" value="Submit">
+                <div class="opciok">
+                    <p>Hozol magaddal kísérőt?</p>
+                    <input type="checkbox" id="kisero1" name="vehicle1" value="Bike">
+                    <label for="kisero1">Igen</label><br>
+                    <input type="checkbox" id="kisero2" name="vehicle3" value="Boat">
+                    <label for="kisero2">Nem</label><br><br>
+                </div>
+                <div class="form-row">
+                    <label for="country">Ha igen, akkor mennyit?</label>
+                    <select id="kiseroszam2" name="country">
+            <option value="kisero">1</option>
+            <option value="kisero">2</option>
+            <option value="kisero">3</option>
+            <option value="kisero">4</option>
+            <option value="kisero">5</option>
+            </select></div>
+                <div class="opciok">
+                    <p>Alkohol tartalmú italt fogtok fogyasztani?</p>
+                    <input type="checkbox" id="alkohol1" name="vehicle1" value="Bike">
+                    <label for="alkohol1">Igen</label><br>
+                    <input type="checkbox" id="alkohol2" name="vehicle3" value="Boat">
+                    <label for="alkohol2">Nem</label><br><br>
+                </div>
+                <div class="opciok">
+                    <p>Részt veszel/vesztek a jelmezversenyen?</p>
+                    <input type="checkbox" id="verseny1" name="vehicle1" value="Bike">
+                    <label for="verseny1">Igen</label><br>
+                    <input type="checkbox" id="verseny2" name="vehicle3" value="Boat">
+                    <label for="verseny2">Nem</label><br><br>
+                </div>
+                <p>*A jelmezversenyhez való részvételhez előzetesen kell jelentkezni a farsangi.buli.2022@gmail.com-on.</p>
             </form>
         </article>
         <aside class="szemelyesaside">
+            <img src="kepek/riocarnival2015-681.jpg" alt="">
+            <img src="kepek/riocarnival2015-681.jpg" alt="">
 
         </aside>
         <footer class="szemelyesfooter">
-
+            <h6>Készült: Sárdi Gábor és Szedlár Krisztin</h6>
         </footer>
 
     </main>

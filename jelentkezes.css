@@ -1,36 +1,50 @@
-main{
-    grid-template-areas: "h h h h"
-    "n n n n"
-    "a a as as"
-    "f f f f";
-
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "h h h h h" "n n n n n" "a a a a as" "f f f f f";
 }
-header{
+
+main,
+header,
+nav,
+aside,
+article,
+footer,
+section {
+    border: 1px solid black;
+}
+
+header {
     grid-area: h;
 }
-nav{
-    grid-area:n;
+
+nav {
+    grid-area: n;
 }
-aside{
-    grid-area:as;
+
+aside {
+    grid-area: as;
 }
-article{
+
+.szemelyesaside img {
+    width: 300px;
+    align-content: center;
+}
+
+article {
     grid-area: a;
 }
-footer{
+
+footer {
     grid-area: f;
+    align-content: center;
 }
 
-@media screen and(max-width: 600px)
-              and(min-width: 300px){
-    main{
-        grid-template-areas: "h h h h"
-    "n n n n"
-    "a a a a"
-    "as as as as"
-    "f f f f";
-    grid-auto-columns: 1fr;
+@media screen and(max-width: 600px) and(min-width: 300px) {
+    main {
+        width: 100%;
+        grid-template-areas: "h" "n" "a" "as" "f";
+        grid-auto-columns: 1fr;
     }
 }
-
-
