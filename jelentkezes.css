@@ -21,22 +21,6 @@ section {
     border: 1px solid black;
 }
 
-header {
-    grid-area: h;
-    background-color: rgb(117, 123, 200);
-    height: 180px;
-    text-align: center;
-}
-
-header h1 {
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-header img {
-    width: 1000px;
-}
-
 .container {
     position: relative;
     text-align: center;
