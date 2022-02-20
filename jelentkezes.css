@@ -7,6 +7,8 @@ main {
 
 body {
     background-color: rgb(233, 224, 241);
+    background-image: url(kepek/1\ \(1\).jpg);
+    background-repeat: round;
 }
 
 main,
